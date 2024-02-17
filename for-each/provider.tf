@@ -11,7 +11,7 @@ terraform {
   backend "s3" {
     bucket   = "roboshp-remote-state"
     key      = "foreach-demo"
-    region   = "US East (N. Virginia) us-east-1"
+    region   = us-east-1
     dynamodb_table = "roboshop-locking"
     
   }
