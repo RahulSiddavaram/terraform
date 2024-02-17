@@ -13,7 +13,6 @@ terraform {
     dynamodb_table = "roboshop-locking"
   }
 }
-
   
 provider "aws" {
   # Configuration options
