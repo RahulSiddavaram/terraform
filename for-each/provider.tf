@@ -7,15 +7,7 @@ terraform {
   }
 }
 
-terraform {
-  backend "s3" {
-    bucket   = "roboshp-remote-state"
-    key      = "foreach-demo"
-    region   = us-east-1
-    dynamodb_table = "roboshop-locking"
-    
-  }
-}
+
 provider "aws" {
   # Configuration options
   # you can give access ke and secret key here, but security problem
