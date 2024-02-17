@@ -1,12 +1,12 @@
-# resource "aws_instance" "roboshop" {
-#     for_each = var.instances
-#     ami = var.ami_id 
-#     instance_type = each.value
-#     tags = {
-#         Name = each.key
-#     }
-    
-# }
+resource "aws_instance" "roboshop" {
+    for_each = var.instances
+    ami = var.ami_id 
+    instance_type = each.value
+    tags = {
+        Name = each.key
+    }
+  
+}
 #if web give public ip or else give private ip
 # resource "aws_route53_record" "www" {
 #     for_each = aws_instance.roboshop
