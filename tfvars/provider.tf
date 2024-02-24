@@ -1,3 +1,6 @@
+#variables mentioned in variables.tf are default values 
+# we can always overrite them
+
 terraform {
   required_providers {
     aws = {

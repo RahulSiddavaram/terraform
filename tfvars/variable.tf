@@ -23,11 +23,11 @@ variable "zone_id" {
   default = "Z1037679PWH8BTMNZ3SR" 
 }
 
-variable "domain" {
+variable "sg_name" {
   default = "allow-all" 
 }
 
-variable "sg_name" {
+variable "domain" {
   default = "rahuldevops.cloud" 
 }
 
